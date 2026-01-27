@@ -38,8 +38,6 @@
     "editor.colorDecorators": false,
     "github.copilot.inlineSuggest.enable": false, // Copilot satır içi tamamlamayı kapatır
     "github.copilot.enable": {
-    
-    
         "*": false,
         "yaml": false,
         "plaintext": false,
@@ -48,5 +46,12 @@
     "vsintellicode.suggestions.enabled": false, // IntelliCode önerilerini kapatır
     "editor.inlineSuggest.showToolbar": "never", // Öneri araç çubuğunu gizler
     "editor.suggest.showComments": false, // Yorumlarda öneri göstermeyi kapatır
-    "editor.comments.enabled": false // Genel yorum özelliklerini kısıtlar
+    "editor.comments.enabled": false, // Genel yorum özelliklerini kısıtlar
+    "editor.semanticHighlighting.enabled": false, // Kodun anlamsal renklendirmesini (ve potansiyel öneri renklerini) kapatır
+    "editor.folding": false, // Sol taraftaki kod katlama oklarını kapatır
+    "editor.glyphMargin": false, // Sol taraftaki hata/breakpoint vb. ikon boşluğunu kapatır
+    "editor.minimap.enabled": false, // Sağ taraftaki küçük haritayı kapatır
+    "scm.diffDecorations": "none", // Git değişikliklerini gösteren kenar renklerini kapatır
+    "editor.overviewRulerBorder": false, // Sağdaki kaydırma çubuğundaki işaretleri kapatır
+    "editor.hideCursorInOverviewRuler": true // Kaydırma çubuğunda imleci gizler
 }
