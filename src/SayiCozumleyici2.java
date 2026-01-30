@@ -1,3 +1,12 @@
+/* 
+Dışarıdan girilen bir tamsayı değişkeni için girilen değerdeki hem tek hem de çift rakamların toplamını; 
+girilen sayının basamak sayısını ve tek rakamlar toplamı ile çift rakamlar toplamı arasındaki mutlak farkı bulup 
+ekrana yazdıran programın kodu istenmektedir.
+
+Bu yapay zekanın yardım etmesiyle yazdığım algoritma öbür algoritmaya kıyasla daha rahat okunabilir profesyonel bir yapı.
+*/
+
+
 import java.util.Scanner;
 
 public class SayiCozumleyici2 {

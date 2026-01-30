@@ -1,3 +1,11 @@
+/* 
+Dışarıdan girilen bir tamsayı değişkeni için girilen değerdeki hem tek hem de çift rakamların toplamını; 
+girilen sayının basamak sayısını ve tek rakamlar toplamı ile çift rakamlar toplamı arasındaki mutlak farkı bulup 
+ekrana yazdıran programın kodu istenmektedir.
+
+Bu benim düşündüğüm algoritma magic rakamlar içermesi nedeniyle clean code'dan uzak bir yapı.
+*/
+
 import java.util.Scanner;
 
 public class SayiCozumleyici1 {
@@ -50,7 +58,7 @@ public class SayiCozumleyici1 {
             toplamFark *= -1;
         }
 
-        int[] dizi = { tekToplam, ciftToplam, toplam, toplamFark, count};
+        int[] dizi = { tekToplam, ciftToplam, toplam, toplamFark, count };
 
         return dizi;
     }

@@ -1,3 +1,10 @@
+/*
+Dışarıdan girilen 10 tabanındaki bir tamsayı değişkeni için eğer girilen değer 
+çift ise 8 tabanına dönüştüren değilse 2 tabanına dönüştüren programın kodu istenmektedir.
+
+Gelecekten not: dönüp bakınca, bu örnekte metotları neden static yapmamışım anlamadım
+ */
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
