@@ -15,6 +15,9 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 | 4 | **Sayı Çözümleyici (V1)** | `SayiCozumleyici1.java` | Array Return Type |
 | 5 | **Sayı Çözümleyici (V2)** | `SayiCozumleyici2.java` | Class Structures, DRY Principle |
 | 6 | **Ortalama Hesaplayıcı** | `GirdiyeGoreOrtalama.java` | Modular Methods, Math Logic |
+| 7 | **Üçgen Çizme** | `UcgenCizme.java` | Nested Loops, Pattern Printing |
+| 8 | **Dörtgen Çizme** | `DortgenCizme.java` | Nested Loops, Grid Generation |
+| 9 | **Havalı İsim Yazdırıcı** | `HavaliIsim.java` | String Manipulation, Creative Output |
 
 ---
 
@@ -64,6 +67,27 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
   * **Çift Sayı:** Basamakların Aritmetik Ortalaması.
   * **Tek Sayı:** Basamakların Geometrik Ortalaması.
 * **Teknik Detay:** Her işlem (`ciftTekKontrol`, `aritmetikOrtalama`, `geometrikOrtalama`) ayrı metotlara bölünerek modülerlik sağlanmıştır.
+
+### 7. Üçgen Çizme
+
+📌 **Dosya:** [src/UcgenCizme.java](src/UcgenCizme.java)
+
+* **Amaç:** Kullanıcıdan alınan yükseklik değerine göre yıldızlarla ikizkenar üçgen çizmek.
+* **Teknik Detay:** İç içe döngüler kullanılarak satır, boşluk ve yıldız sayısı dinamik olarak hesaplanıp konsola bastırılır.
+
+### 8. Dörtgen Çizme
+
+📌 **Dosya:** [src/DortgenCizme.java](src/DortgenCizme.java)
+
+* **Amaç:** Kullanıcıdan alınan en ve boy değerlerine göre yıldızlarla dikdörtgen çizmek.
+* **Teknik Detay:** Basit iç içe döngü mantığı ile kullanıcının belirlediği boyutlarda bir matris görselleştirilir.
+
+### 9. Havalı İsim Yazdırıcı
+
+📌 **Dosya:** [src/HavaliIsim.java](src/HavaliIsim.java)
+
+* **Amaç:** Girilen ad ve soyadı, özel bir çerçeveleme mantığıyla ekrana yazdırmak.
+* **Teknik Detay:** String manipülasyonu ile metin uzunlukları kontrol edilir, gerekirse dolgu karakterleri (`*` veya `+`) eklenir ve karakterler belirli bir desen (köşeli veya sarmal benzeri) oluşturacak şekilde yazdırılır.
 
 ---
 
