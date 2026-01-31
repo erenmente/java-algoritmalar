@@ -37,28 +37,28 @@ public class SayiCozumleyici1 {
         int tekToplam = 0, ciftToplam = 0, count = 0, toplamFark = 0, toplam = 0;
 
         while (sayi > 0) {
-            if ((sayi % 10) % 2 == 0) {
-                ciftToplam += sayi % 10;
+            if ((sayi % 10) % 2 == 0) { //Son rakamı çift mi kontrol ediyor
+                ciftToplam += sayi % 10;    //Çift ise ciftToplam değişkeniyle toplayıp ciftToplam değişkenine atıyor.
 
             } else {
-                tekToplam += sayi % 10;
+                tekToplam += sayi % 10; //Çift değilse tekToplam değişkenine atıyor.
 
             }
-            count++;
-            sayi /= 10;
+            count++;    //Kaç basamak olduğunu hesaplıyor.
+            sayi /= 10; //Hesapladığımız son rakamı atıyor.
 
         }
 
-        toplam = tekToplam + ciftToplam;
+        toplam = tekToplam + ciftToplam;    //Rakamlar toplamı
 
-        toplamFark = tekToplam - ciftToplam;
+        toplamFark = tekToplam - ciftToplam;    //Rakamlar Farkı
 
-        if (toplamFark < 0) {
+        if (toplamFark < 0) {   //Rakamlar farkının mutlağını alıyor
 
             toplamFark *= -1;
         }
 
-        int[] dizi = { tekToplam, ciftToplam, toplam, toplamFark, count };
+        int[] dizi = { tekToplam, ciftToplam, toplam, toplamFark, count };  //İstenen tüm sonuçlar diziye atanıp dönderiliyor
 
         return dizi;
     }

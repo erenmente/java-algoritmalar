@@ -35,44 +35,44 @@ public class SayiCozumleyici2 {
 
     }
 
-    static AnalizSonucu sayiCozumle(int sayi) {
-        AnalizSonucu sonuc = new AnalizSonucu();
+    static AnalizSonucu sayiCozumle(int sayi) { //Burada döndüreceğimiz değerin aslında class nesnesi olduğunu belirtiyoruz
+        AnalizSonucu sonuc = new AnalizSonucu();    //Nesne yarattık
         int tekToplam = 0, ciftToplam = 0, count = 0, mutlakFark = 0, toplam = 0;
 
-        while (sayi > 0) {
-            if ((sayi % 10) % 2 == 0) {
-                ciftToplam += sayi % 10;
+        while (sayi > 0) {  //Eğer değerler double olsaydı sonsuz döngüye girerdik
+            if ((sayi % 10) % 2 == 0) { //Son rakamı çift mi kontrol ediyor
+                ciftToplam += sayi % 10;    //Çift ise ciftToplam değişkeniyle toplayıp ciftToplam değişkenine atıyor.
 
             } else {
-                tekToplam += sayi % 10;
+                tekToplam += sayi % 10; //Çift değilse tekToplam değişkenine atıyor.
 
             }
-            count++;
-            sayi /= 10;
+            count++;    //Kaç basamak olduğunu hesaplıyor.
+            sayi /= 10; //Hesapladığımız son rakamı atıyor.
 
         }
 
-        toplam = tekToplam + ciftToplam;
+        toplam = tekToplam + ciftToplam;    //Rakamlar toplamı
 
-        mutlakFark = tekToplam - ciftToplam;
+        mutlakFark = tekToplam - ciftToplam;    //Rakamların farkı
 
-        if (mutlakFark < 0) {
+        if (mutlakFark < 0) {   //Rakamların farkının mutlağı
 
             mutlakFark *= -1;
         }
 
-        sonuc.tekToplam = tekToplam;
-        sonuc.ciftToplam = ciftToplam;
-        sonuc.toplam = toplam;
-        sonuc.mutlakFark = mutlakFark;
-        sonuc.basamakSayisi = count;
+        sonuc.tekToplam = tekToplam;    //Bulduğumuz tek rakamlar toplamını AnalizSonucundaki değişkene atıyoruz
+        sonuc.ciftToplam = ciftToplam;  //Bulduğumuz çift rakamlar toplamını AnalizSonucundaki değişkene atıyoruz
+        sonuc.toplam = toplam;  //Bulduğumuz rakamlar toplamını AnalizSonucundaki değişkene atıyoruz
+        sonuc.mutlakFark = mutlakFark;  //Bulduğumuz mutlak farkı AnalizSonucundaki değişkene atıyoruz
+        sonuc.basamakSayisi = count;    //Bulduğumuz basamak sayısını AnalizSonucundaki değişkene atıyoruz
 
-        return sonuc;
+        return sonuc;   //yarattığımız nesneyi dönderiyoruz
     }
 
 }
 
-class AnalizSonucu {
+class AnalizSonucu {    //Boş kutumuz (değerler null değiller, default olarak atanıyorlar)
     int tekToplam;
     int ciftToplam;
     int toplam;
