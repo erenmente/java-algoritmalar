@@ -18,6 +18,7 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 | 7 | **Üçgen Çizme** | `UcgenCizme.java` | Nested Loops, Pattern Printing |
 | 8 | **Dörtgen Çizme** | `DortgenCizme.java` | Nested Loops, Grid Generation |
 | 9 | **Havalı İsim Yazdırıcı** | `HavaliIsim.java` | String Manipulation, Creative Output |
+| 10 | **Harf Analizi** | `HarfSay.java` | Frequency Counting, Bubble Sort, Helper Classes |
 
 ---
 
@@ -88,6 +89,13 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 
 * **Amaç:** Girilen ad ve soyadı, özel bir çerçeveleme mantığıyla ekrana yazdırmak.
 * **Teknik Detay:** String manipülasyonu ile metin uzunlukları kontrol edilir, gerekirse dolgu karakterleri (`*` veya `+`) eklenir ve karakterler belirli bir desen (köşeli veya sarmal benzeri) oluşturacak şekilde yazdırılır.
+
+### 10. Harf Analizi
+
+📌 **Dosya:** [src/HarfSay.java](src/HarfSay.java)
+
+* **Amaç:** Rastgele üretilen 100 harf üzerinde analiz yaparak; harfleri alfabetik sıralamak, her harfin kaç kez geçtiğini bulmak ve en çok tekrar eden harfi tespit etmek.
+* **Teknik Detay:** `Math.random()` ile veri üretimi, **Bubble Sort** mantığı ile sıralama ve sonuçları döndürmek için yardımcı bir **Sınıf (Class)** (`kutu` yapısı) kullanımı içerir.
 
 ---
 
