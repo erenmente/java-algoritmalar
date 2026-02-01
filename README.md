@@ -19,6 +19,7 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 | 8 | **Dörtgen Çizme** | `DortgenCizme.java` | Nested Loops, Grid Generation |
 | 9 | **Havalı İsim Yazdırıcı** | `HavaliIsim.java` | String Manipulation, Creative Output |
 | 10 | **Harf Analizi** | `HarfSay.java` | Frequency Counting, Bubble Sort, Helper Classes |
+| 11 | **Navigasyon** | `Navigasyon.java` | 2D Arrays, Path Finding |
 
 ---
 
@@ -96,6 +97,13 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 
 * **Amaç:** Rastgele üretilen 100 harf üzerinde analiz yaparak; harfleri alfabetik sıralamak, her harfin kaç kez geçtiğini bulmak ve en çok tekrar eden harfi tespit etmek.
 * **Teknik Detay:** `Math.random()` ile veri üretimi, **Bubble Sort** mantığı ile sıralama ve sonuçları döndürmek için yardımcı bir **Sınıf (Class)** (`kutu` yapısı) kullanımı içerir.
+
+### 11. Navigasyon
+
+📌 **Dosya:** [src/Navigasyon.java](src/Navigasyon.java)
+
+* **Amaç:** 10x10'luk bir matris üzerinde (0,0) noktasından başlayıp bitiş noktasına ulaşan rastgele bir yol oluşturmak ve bu yolun koordinatlarını tespit etmek.
+* **Teknik Detay:** İki boyutlu diziler (matrisler) üzerinde rastgele yol üretimi (`matrisDoldur`) ve matris taraması ile yol koordinatlarının bulunması (`yolBul`). Matrisin görselliği için iç içe döngülerle yazdırma işlemi yapılır.
 
 ---
 
