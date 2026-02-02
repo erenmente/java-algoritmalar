@@ -7,8 +7,8 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 
 ## 📂 İçerik Özeti
 
-| # | Proje Adı | Ana Dosya | Temel Kavramlar |
-|:-:|:---|:---|:---|
+|  #  | Proje Adı | Ana Dosya | Temel Kavramlar |
+| :--: | :--- | :--- | :--- |
 | 1 | **Dinamik Dizi (Binary)** | `KutuphaneKullanmadanDinamikDizi.java` | Array Resizing, Binary Conversion |
 | 2 | **Matris Oluşturucu** | `Matris.java` | 2D Arrays, Pattern Generation |
 | 3 | **Taban Dönüştürücü** | `OnlukTabanDonusturme.java` | Base Conversion (Octal/Binary) |
@@ -20,6 +20,7 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 | 9 | **Havalı İsim Yazdırıcı** | `HavaliIsim.java` | String Manipulation, Creative Output |
 | 10 | **Harf Analizi** | `HarfSay.java` | Frequency Counting, Bubble Sort, Helper Classes |
 | 11 | **Navigasyon** | `Navigasyon.java` | 2D Arrays, Path Finding |
+| 12 | **Mayın Tarlası** | `MayinTarlasi.java` | 2D Arrays, Game Logic, Random Generation |
 
 ---
 
@@ -103,7 +104,14 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 📌 **Dosya:** [src/Navigasyon.java](src/Navigasyon.java)
 
 * **Amaç:** 10x10'luk bir matris üzerinde (0,0) noktasından başlayıp bitiş noktasına ulaşan rastgele bir yol oluşturmak ve bu yolun koordinatlarını tespit etmek.
-* **Teknik Detay:** İki boyutlu diziler (matrisler) üzerinde rastgele yol üretimi (`matrisDoldur`) ve matris taraması ile yol koordinatlarının bulunması (`yolBul`). Matrisin görselliği için iç içe döngülerle yazdırma işlemi yapılır.
+* **Teknik Detay:** İki boyutlu diziler (matrisler) üzerinde rastgele yol üretimi (`matrisDoldur`) ve matris taraması ile yol koordinatlarının bulunması (`yolBul`). Matrisın görselliği için iç içe döngülerle yazdırma işlemi yapılır.
+
+### 12. Mayın Tarlası
+
+📌 **Dosya:** [src/MayinTarlasi.java](src/MayinTarlasi.java)
+
+* **Amaç:** Kullanıcıdan alınan boyutlara göre rastgele mayınlı bir harita oluşturmak ve mayınlara basmadan puan toplamaya çalışmak.
+* **Teknik Detay:** `Math.random()` ile 0 (boş) ve 1 (mayın) değerlerinin dağıtımı, koordinat sisteminin kullanıcı dostu hale getirilmesi (indislerin 0 yerine 1-based algılanması), puanlama mantığı ve modüler metot yapısı (Encapsulation denemesi) içerir.
 
 ---
 
