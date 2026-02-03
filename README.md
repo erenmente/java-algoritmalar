@@ -21,6 +21,7 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 | 10 | **Harf Analizi** | `HarfSay.java` | Frequency Counting, Bubble Sort, Helper Classes |
 | 11 | **Navigasyon** | `Navigasyon.java` | 2D Arrays, Path Finding |
 | 12 | **Mayın Tarlası** | `MayinTarlasi.java` | 2D Arrays, Game Logic, Random Generation |
+| 13 | **Sayıyı Yazıya Çeviri** | `SayiCevirici.java` | String Arrays, Helper Class |
 
 ---
 
@@ -112,6 +113,13 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 
 * **Amaç:** Kullanıcıdan alınan boyutlara göre rastgele mayınlı bir harita oluşturmak ve mayınlara basmadan puan toplamaya çalışmak.
 * **Teknik Detay:** `Math.random()` ile 0 (boş) ve 1 (mayın) değerlerinin dağıtımı, koordinat sisteminin kullanıcı dostu hale getirilmesi (indislerin 0 yerine 1-based algılanması), puanlama mantığı ve modüler metot yapısı (Encapsulation denemesi) içerir.
+
+### 13. Sayıyı Yazıya Çeviri
+
+📌 **Dosya:** [src/SayiCevirici.java](src/SayiCevirici.java)
+
+* **Amaç:** Girilen 4 basamaklı bir sayıyı (örneğin 1453) Türkçe metin karşılığına (Bin Dört Yüz Elli Üç) dönüştürmek.
+* **Teknik Detay:** Sayı modüler aritmetik ile basamaklarına ayrılır (`basamaklaraBol`). Veriler `Basamaklar` isimli yardımcı bir sınıfta (Helper Class) tutulur ve önceden tanımlanmış String dizileri (`birler`, `onlar`) kullanılarak ekrana yazdırılır.
 
 ---
 
