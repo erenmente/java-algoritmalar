@@ -31,34 +31,37 @@ public class SayiCozumleyici1 {
             scanner.next();
         }
 
+        scanner.close();
+
     }
 
     static int[] sayiCozumle(int sayi) {
         int tekToplam = 0, ciftToplam = 0, count = 0, toplamFark = 0, toplam = 0;
 
         while (sayi > 0) {
-            if ((sayi % 10) % 2 == 0) { //Son rakamı çift mi kontrol ediyor
-                ciftToplam += sayi % 10;    //Çift ise ciftToplam değişkeniyle toplayıp ciftToplam değişkenine atıyor.
+            if ((sayi % 10) % 2 == 0) { // Son rakamı çift mi kontrol ediyor
+                ciftToplam += sayi % 10; // Çift ise ciftToplam değişkeniyle toplayıp ciftToplam değişkenine atıyor.
 
             } else {
-                tekToplam += sayi % 10; //Çift değilse tekToplam değişkenine atıyor.
+                tekToplam += sayi % 10; // Çift değilse tekToplam değişkenine atıyor.
 
             }
-            count++;    //Kaç basamak olduğunu hesaplıyor.
-            sayi /= 10; //Hesapladığımız son rakamı atıyor.
+            count++; // Kaç basamak olduğunu hesaplıyor.
+            sayi /= 10; // Hesapladığımız son rakamı atıyor.
 
         }
 
-        toplam = tekToplam + ciftToplam;    //Rakamlar toplamı
+        toplam = tekToplam + ciftToplam; // Rakamlar toplamı
 
-        toplamFark = tekToplam - ciftToplam;    //Rakamlar Farkı
+        toplamFark = tekToplam - ciftToplam; // Rakamlar Farkı
 
-        if (toplamFark < 0) {   //Rakamlar farkının mutlağını alıyor
+        if (toplamFark < 0) { // Rakamlar farkının mutlağını alıyor
 
             toplamFark *= -1;
         }
 
-        int[] dizi = { tekToplam, ciftToplam, toplam, toplamFark, count };  //İstenen tüm sonuçlar diziye atanıp dönderiliyor
+        int[] dizi = { tekToplam, ciftToplam, toplam, toplamFark, count }; // İstenen tüm sonuçlar diziye atanıp
+                                                                           // dönderiliyor
 
         return dizi;
     }

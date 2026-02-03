@@ -32,6 +32,8 @@ public class MayinTarlasi {
 
         app.haritaYazdir();
 
+        app.scanner.close();
+
     }
 
     void haritaOlustur() {

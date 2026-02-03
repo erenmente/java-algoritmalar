@@ -26,6 +26,8 @@ public class HavaliIsim {
         soyad = soyadArtiEkle(soyad);
 
         soyadYazdir(soyad);
+
+        scanner.close();
     }
 
     static String adYildizEkle(String ad) {
@@ -77,7 +79,8 @@ public class HavaliIsim {
 
     }
 
-    static String soyadArtiEkle(String soyad) { // Bu kısımlar ad için yaptığımızın aynısı sadece kare değil U şeklinde yazacak
+    static String soyadArtiEkle(String soyad) { // Bu kısımlar ad için yaptığımızın aynısı sadece kare değil U şeklinde
+                                                // yazacak
         while (soyad.length() % 12 != 0) {
             soyad += "+";
         }

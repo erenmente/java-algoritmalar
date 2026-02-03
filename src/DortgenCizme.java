@@ -18,10 +18,12 @@ public class DortgenCizme {
 
         cizdir(en, boy);
 
+        scanner.close();
+
     }
 
     static void cizdir(int en, int boy) {
-        for (int i = 0; i < boy; i++) { 
+        for (int i = 0; i < boy; i++) {
             for (int j = 0; j < en; j++) {
                 System.out.print("*");
             }

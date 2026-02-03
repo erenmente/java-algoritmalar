@@ -17,6 +17,8 @@ public class KutuphaneKullanmadanDinamikDizi {
         app.ikilikTabanaDonustur(sayi);
 
         app.yazdir();
+
+        scanner.close();
     }
 
     void ikilikTabanaDonustur(int sayi) {
@@ -44,7 +46,8 @@ public class KutuphaneKullanmadanDinamikDizi {
             dizi2[i] = dizi[i];
         }
         dizi = dizi2; // en önemli kısım: burada eleman sayısı büyük olan yani yeni oluşturduğumuz
-                      // dizinin referansını ilk dizi (metot dışarısında kullanılan)'ye atıyoruz ki metodun
+                      // dizinin referansını ilk dizi (metot dışarısında kullanılan)'ye atıyoruz ki
+                      // metodun
                       // dışında aynı diziyi kullanarak yeni oluşturduğumuz diziye erişsin.
 
     }

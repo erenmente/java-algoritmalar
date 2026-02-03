@@ -11,6 +11,8 @@ public class UcgenCizme {
         int yukseklik = scanner.nextInt();
 
         ciz(yukseklik);
+
+        scanner.close();
     }
 
     static void ciz(int yukseklik) {
@@ -25,7 +27,7 @@ public class UcgenCizme {
                 System.out.print("*");
             }
 
-            System.out.println();//boşluk koyuyoruz ki hepsi yan yana yazılmasın.
+            System.out.println();// boşluk koyuyoruz ki hepsi yan yana yazılmasın.
 
         }
 

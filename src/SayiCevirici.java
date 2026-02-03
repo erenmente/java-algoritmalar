@@ -17,6 +17,8 @@ public class SayiCevirici {
 
         yazdir(basamak);
 
+        scanner.close();
+
     }
 
     static Basamaklar basamaklaraBol(int sayi) {
