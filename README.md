@@ -22,6 +22,7 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 | 11 | **Navigasyon** | `Navigasyon.java` | 2D Arrays, Path Finding |
 | 12 | **Mayın Tarlası** | `MayinTarlasi.java` | 2D Arrays, Game Logic, Random Generation |
 | 13 | **Sayıyı Yazıya Çeviri** | `SayiCevirici.java` | String Arrays, Helper Class |
+| 14 | **Vücut Kitle İndeksi** | `VucutKutleIndeksi.java` | OOP, Mathematical Logic |
 
 ---
 
@@ -120,6 +121,13 @@ Genel olarak **Fatih Özkaynak** hocamın kaynaklar kısmındaki oynatma listele
 
 * **Amaç:** Girilen 4 basamaklı bir sayıyı (örneğin 1453) Türkçe metin karşılığına (Bin Dört Yüz Elli Üç) dönüştürmek.
 * **Teknik Detay:** Sayı modüler aritmetik ile basamaklarına ayrılır (`basamaklaraBol`). Veriler `Basamaklar` isimli yardımcı bir sınıfta (Helper Class) tutulur ve önceden tanımlanmış String dizileri (`birler`, `onlar`) kullanılarak ekrana yazdırılır.
+
+### 14. Vücut Kitle İndeksi
+
+📌 **Dosya:** [src/VucutKutleIndeksi.java](src/VucutKutleIndeksi.java)
+
+* **Amaç:** Kullanıcıdan alınan boy ve kilo değerlerine göre Vücut Kitle İndeksini hesaplayıp, kişinin durumunu (Zayıf, Normal, Şişman) belirlemek.
+* **Teknik Detay:** Verilerin **Nesne Yönelimli Programlama (OOP)** prensiplerine uygun olarak işlenmesi, `boy` ve `kilo` değerlerinin sınıf özellikleri (fields) olarak saklanması ve modüler metot yapısı kullanılır.
 
 ---
 
